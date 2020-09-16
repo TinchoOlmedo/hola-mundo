@@ -14,7 +14,7 @@ html {
 /** PRIMERASECCIÓN **/
 #primeraseccion {
   /** background-color: $color-uno; **/
-  background-image: url(file:///Users/martinolmedo/Desktop/Prueba%20boostrap/img/CASA%201.jpg);
+  background-image: url(../img/CASA%201.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

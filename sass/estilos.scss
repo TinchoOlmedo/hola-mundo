@@ -1,0 +1,299 @@
+/**VARIABLES**/
+$color-uno:#5CD2C7;
+$color-dos:#3F6460;
+
+
+/**GENERAL**/ 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/** PRIMERASECCIÓN **/
+
+#primeraseccion{
+   /** background-color: $color-uno; **/
+
+    background-image: url(file:///Users/martinolmedo/Desktop/Prueba%20boostrap/img/CASA%201.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+
+  
+
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }  
+    p{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 25px;
+        
+    }
+    div div a {
+        text-decoration: none;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 3px 6px rgba(0,0,0,0.3);
+
+    }
+    > .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+    
+}
+#primeraseccion div div  div a:hover{
+    background-color: green;
+}
+
+
+
+/**SERVICIOS **/
+
+#servicios{
+    background-color: $color-dos ;
+    h2{
+        text-align: center; 
+    }
+    p{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem; 
+    }
+    div div div{
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: -30px 10px 5px rgba(0,0,0,0.1);
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            width: 150px;
+            background-color: black;
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 6px 3px 6px rgba(0,0,0,0.3);
+        }
+    }
+
+}
+#servicios div div  div a:hover{
+    background-color: green;
+}
+
+/**PROYECTOS**/
+
+@each $area in proyectos, quienes {
+    ##{$area} {
+
+        h3{
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+        p{
+            text-align: center; 
+        }
+        div div div div a{
+            text-decoration: none;
+            width: 100px;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 6px 3px 6px rgba(0,0,0,0.3); 
+        }
+    }
+       
+    ##{$area} div div  div a:hover{
+            background-color: green;
+        }
+    }
+#proyectos{
+        background-color: $color-uno;
+}
+#quienes{
+    background-color: $color-dos ; 
+}
+
+
+
+/**
+#proyectos{
+    background-color: $color-uno;
+    h2{
+        text-align: center; 
+    } 
+    p{
+        text-align: center;  
+    }
+    div div div  a{
+        text-decoration: none;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 3px 6px rgba(0,0,0,0.3);
+        
+    }
+    
+}
+#proyectos div div  div a:hover{
+    background-color: green;
+}
+
+**/
+
+ 
+
+ /**QUIENES**/
+/**
+#quienes{
+    background-color: $color-dos ; 
+    h2{
+        text-align: center; 
+    }
+    p{
+        text-align: center; 
+    }
+    div div div  a{
+        text-decoration: none;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 3px 6px rgba(0,0,0,0.3); 
+    }
+}
+   
+#quienes div div  div a:hover{
+        background-color: green;
+    }
+
+    **/
+
+/** CONTACTO **/
+
+#contacto{
+    background-color: $color-uno;
+    h4{
+        text-align: center;
+        margin-bottom: 30px;
+    } 
+    
+}
+
+
+/**FOOTER**/
+
+footer{
+    background-color:$color-dos;
+    height: 50px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color:black; 
+    }
+    
+}
+
+
+/**HOJAS**?
+/**QUIENES SOMOS HOJA**/
+
+#quienessomos1 {
+    background-color: $color-uno;
+    h2{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem; 
+    } 
+    p{
+        text-align: center; 
+    }
+    div div div {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+}
+
+
+@import "_alineado";
+
+
+
+/**PROYECTOS HOJA**/
+
+@import "_galeria";
+
+
+#fondo {
+    display:flex;
+    height: 100%;
+}
+
+
+/**HOJA DE SERIVICIOS**/
+
+#arquitecturaresidencial{
+    text-align: center;
+}
+#arquitecturaindustrial{
+    text-align: center;
+}
+
+.hojaservicios{
+    background-color: $color-uno ;
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+
+
+
+
+/**HOJA DE CONTACTO **/
+
+#hojadecontacto{
+    background-color: $color-uno ;
+    h2{
+        padding-top: 10px;
+    }
+    div div span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: -30px 10px 5px rgba(0,0,0,0.1);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+
+
